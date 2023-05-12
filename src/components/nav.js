@@ -12,7 +12,7 @@ const Nav = () => (
             BOOKS
           </li>
         </Link>
-        <Link to="/calculator">
+        <Link to="/categories">
           <li className="navlink" title="categories">
             CATEGORIES
           </li>
