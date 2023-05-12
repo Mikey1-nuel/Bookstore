@@ -8,12 +8,12 @@ const Nav = () => (
       <h1>BookStore CMS</h1>
       <ul className="menu">
         <Link to="/">
-          <li className="navlink" title="home">
+          <li className="navlink" title="books">
             BOOKS
           </li>
         </Link>
         <Link to="/calculator">
-          <li className="navlink" title="calculator">
+          <li className="navlink" title="categories">
             CATEGORIES
           </li>
         </Link>
