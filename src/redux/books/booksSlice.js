@@ -5,18 +5,21 @@ const initialState = {
   books: [
     {
       item_id: uuidv4(),
-      author: 'Norman Vincent',
-      title: 'The Power of positive Thinking',
+      author: 'John Smith',
+      title: 'The Great Gatsby',
+      category: 'Fiction',
     },
     {
       item_id: uuidv4(),
-      author: 'Queen Juma',
-      title: 'Fashion Stars',
+      author: 'Leo Tolstoy',
+      title: 'Anna Karenina',
+      category: 'Fiction',
     },
     {
       item_id: uuidv4(),
-      author: 'Prince Caleb',
-      title: 'The power of Love',
+      author: 'Richard Dawkins',
+      title: 'The Selfish Gene',
+      category: 'Nonfiction',
     },
   ],
 };
