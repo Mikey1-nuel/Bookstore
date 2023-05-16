@@ -1,19 +1,27 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Nav from './components/nav';
+import {
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+} from 'react-router-dom';
+import Interface from './components/interface';
 import Categories from './components/categories';
 import BookList from './components/booklist';
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Interface />}>
+      <Route index element={<BookList />} />
+      <Route path="categories" element={<Categories />} />
+    </Route>,
+  ),
+);
+
 function App() {
   return (
-    <div>
-      <Nav />
-      <div className="pageContainer">
-        <Routes>
-          <Route path="/" element={<BookList />} />
-          <Route path="categories" element={<Categories />} />
-        </Routes>
-      </div>
+    <div className="App">
+      <RouterProvider router={router} />
     </div>
   );
 }

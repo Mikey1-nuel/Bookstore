@@ -1,28 +1,59 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { removeBook } from '../redux/books/booksSlice';
 
-function BookDetails(props) {
-  const { title, author } = props;
+function BookDetails({ book }) {
+  const dispatch = useDispatch();
   return (
-    <div className="author">
+    <div className="container3">
       <div className="title">
         Title:
-        { title }
+        {book.title}
       </div>
       <div className="author">
         Author:
-        { author }
+        {book.author}
       </div>
-      <div className="title">
-        <button className="deletebtn" type="button">Delete</button>
+      <div className="book-option">
+        <button type="button" className="comments-btn">
+          Comments
+        </button>
+        <div className="divider" />
+        <button
+          type="button"
+          className="remove-btn"
+          onClick={() => dispatch(removeBook(book.item_id))}
+        >
+          Remove
+        </button>
+        <div className="divider" />
+        <button type="button" className="edit-btn">
+          Edit
+        </button>
+      </div>
+      <div className="second-section">
+        <p>74% completed</p>
+      </div>
+      <div className="divider" />
+      <div className="Third-section">
+        <p>CURRENT CHAPTER</p>
+        <p>CHAPTER 6</p>
+        <br />
+        <button type="button" className="update-progress">
+          UPDATE PROGRESS
+        </button>
       </div>
     </div>
   );
 }
 
 BookDetails.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  book: PropTypes.shape({
+    item_id: PropTypes.string,
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }).isRequired,
 };
 
 export default BookDetails;
