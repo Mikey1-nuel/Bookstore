@@ -25,8 +25,8 @@ function Form() {
     }
   };
   return (
-    <div>
-      <h2>ADD NEW BOOK</h2>
+    <div className="formcontainer">
+      <h2 className="formtitle">ADD NEW BOOK</h2>
       <form onSubmit={handelSubmit}>
         <input type="text" placeholder="Book title" className="booktitle" required onChange={(e) => setTitle(e.target.value)} />
         <input type="text" placeholder="Book author" className="bookauthor" required onChange={(e) => setauthor(e.target.value)} />
