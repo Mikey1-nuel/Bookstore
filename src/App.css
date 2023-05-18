@@ -17,14 +17,14 @@
   --cool-blue: #4386bf;
   --azure: #0290ff;
   --font-M: montserrat, arial, helvetica, sans-serif;
-  --font-R: Roboto, sans-serif;
+  --font-R: roboto, sans-serif;
 }
 
 body {
   background: #fafafa;
 }
 
-/* NAV*/
+/* NAV */
 
 .nav {
   width: 100%;
@@ -61,7 +61,7 @@ body {
 
 .menu a {
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -89,7 +89,7 @@ body {
   background-color: var(--cool-blue);
 }
 
-/*FRONT PAGE*/
+/* FRONT PAGE */
 
 .container5 {
   padding: 0 6.25rem;
@@ -240,7 +240,7 @@ body {
   background-color: #0290ff;
   border: none;
   outline: none;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -251,7 +251,7 @@ body {
   color: #fff;
 }
 
-/*FORM*/
+/* FORM */
 
 .formcontainer {
   margin-top: 2.5rem;
@@ -260,7 +260,7 @@ body {
 }
 
 .formtitle {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -285,7 +285,7 @@ input {
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
@@ -302,7 +302,7 @@ input {
   padding: 0.813rem 0 0.813rem 0;
   border-radius: 6px;
   background-color: #0290ff;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
